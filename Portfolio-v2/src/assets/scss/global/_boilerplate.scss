@@ -1,0 +1,13 @@
+// for resetting default html styles
+
+// @use '../util/'as u;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: red;
+}
