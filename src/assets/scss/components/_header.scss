@@ -1,0 +1,26 @@
+.header {
+    width: 100vw;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--color-bg);
+
+    &__nav {
+        width: 50%;
+        max-width: 50rem;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+    }
+
+    &__items {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+    }
+
+    &__item {
+        text-transform: uppercase;
+    }
+}

@@ -182,4 +182,27 @@ section {
   border-bottom: 0.4rem solid var(--color-text);
   width: 5rem;
   transform: translateX(-6rem);
+}
+.header {
+  width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  z-index: 99;
+  background-color: var(--color-bg);
+}
+.header__nav {
+  width: 50%;
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 0.5rem 0;
+}
+.header__items {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.header__item {
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

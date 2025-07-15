@@ -1,5 +1,6 @@
 <script setup>
 import Landing from "./views/Landing.vue";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
@@ -18,6 +19,7 @@ import Landing from "./views/Landing.vue";
   </header> -->
 
   <main>
+    <Header />
     <Landing />
   </main>
 </template>
