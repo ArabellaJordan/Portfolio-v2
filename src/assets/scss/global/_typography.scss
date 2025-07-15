@@ -26,4 +26,12 @@ h2 {
 
 h3 {
     font-size: 4rem;
+    font-weight: 600;
+    font-family: var(--font-theme);
+}
+
+.text {
+    &__red {
+        color: var(--color-accent) !important;
+    }
 }

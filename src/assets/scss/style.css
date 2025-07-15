@@ -35,10 +35,12 @@ h2 {
 
 h3 {
   font-size: 4rem;
+  font-weight: 600;
+  font-family: var(--font-theme);
 }
 
-icon {
-  width: 2.5rem;
+.text__red {
+  color: var(--color-accent) !important;
 }
 
 *,
@@ -49,14 +51,38 @@ icon {
 
 body {
   width: 100vw;
+  overflow-x: hidden;
 }
 
 li {
   list-style-type: none;
 }
 
-.home {
+a {
+  text-decoration: none;
+}
+
+section {
+  margin-bottom: 18rem;
   border: 1px solid red;
+}
+
+.button {
+  font-family: var(--font-theme);
+}
+.button__pill {
+  padding: 0.1rem 3rem;
+  border-radius: 1rem;
+  background-color: var(--color-subtext);
+  color: var(--color-bg);
+  font-family: 400;
+  transition: all 0.3s ease-in;
+}
+.button__pill:hover, .button__pill:focus, .button__pill:active {
+  background-color: var(--color-accent);
+}
+
+.home {
   width: 80%;
   margin: 0 auto;
   height: 100vh;
@@ -109,19 +135,53 @@ li {
   display: inline-block;
 }
 .home__item a::before {
-  content: "__";
-  color: var(--color-accent) !important;
+  content: "";
+  border-bottom: 2px solid var(--color-accent);
   position: absolute;
   transition: all 0.3s ease-in;
-  top: -25%;
+  bottom: 50%;
   width: 0;
   overflow: hidden;
 }
 .home__item a:hover, .home__item a:focus, .home__item a:active {
   color: var(--color-accent) !important;
-  transform: translateX(2rem);
+  transform: translateX(2.5rem);
 }
 .home__item a:hover::before {
-  transform: translateX(-2rem);
+  transform: translateX(-2.5rem);
   width: 2rem;
+}
+
+.section__container {
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid green;
+}
+.section__title {
+  position: relative;
+}
+.section__title--right {
+  text-align: right;
+  transform: translateX(-6rem);
+}
+.section__title--right::after {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  padding-left: 1rem;
+  border-bottom: 0.4rem solid var(--color-text);
+  width: 5rem;
+  margin-left: 1rem;
+}
+.section__title--left {
+  transform: translateX(6rem);
+}
+.section__title--left::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  padding-left: 1rem;
+  border-bottom: 0.4rem solid var(--color-text);
+  width: 5rem;
+  transform: translateX(-6rem);
 }/*# sourceMappingURL=style.css.map */

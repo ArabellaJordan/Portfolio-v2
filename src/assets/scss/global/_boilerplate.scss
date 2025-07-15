@@ -10,8 +10,19 @@
 
 body {
     width: 100vw;
+    overflow-x: hidden;
 }
 
 li {
     list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-bottom: 18rem;
+    border: 1px solid red;
+    // background-color: lightgray;
 }

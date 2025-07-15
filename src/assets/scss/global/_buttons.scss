@@ -1,0 +1,19 @@
+.button {
+    font-family: var(--font-theme);
+
+    &__pill {
+        padding: 0.1rem 3rem;
+        border-radius: 1rem;
+        background-color: var(--color-subtext);
+        color: var(--color-bg);
+        font-family: 400;
+        transition: all 0.3s ease-in;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: var(--color-accent);
+        }
+
+    }
+}
