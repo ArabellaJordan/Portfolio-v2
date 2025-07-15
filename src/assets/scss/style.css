@@ -64,7 +64,6 @@ a {
 
 section {
   margin-bottom: 18rem;
-  border: 1px solid red;
 }
 
 .button {
@@ -155,7 +154,6 @@ section {
 .section__container {
   width: 80%;
   margin: 0 auto;
-  border: 1px solid green;
 }
 .section__title {
   position: relative;
