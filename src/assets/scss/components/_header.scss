@@ -22,5 +22,13 @@
 
     &__item {
         text-transform: uppercase;
+        transition: all 0.3s ease-in;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &:active {
+            color: var(--color-accent);
+        }
     }
 }

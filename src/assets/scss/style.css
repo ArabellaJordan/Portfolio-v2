@@ -205,4 +205,9 @@ section {
 }
 .header__item {
   text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.header__item:hover, .header__item:focus, .header__item:active {
+  color: var(--color-accent);
 }/*# sourceMappingURL=style.css.map */
