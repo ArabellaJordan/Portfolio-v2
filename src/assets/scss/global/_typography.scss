@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
 
+:root {
+    --font-theme: "Sora", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+}
+
 * {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-body);
+    color: var(--color-text);
 }
 
 h1 {
-    font-family: "Sora", sans-serif;
+    font-family: var(--font-theme);
     font-size: 8.75rem;
     letter-spacing: -0.5rem;
     font-weight: 600;
@@ -16,4 +22,8 @@ h2 {
     font-size: 4rem;
     font-weight: 400;
     line-height: 0.9;
+}
+
+h3 {
+    font-size: 4rem;
 }

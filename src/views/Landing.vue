@@ -30,15 +30,21 @@
             </ul>
           </nav>
         </div>
-        <div class="home__image">
+        <div class="home__right">
           <img :src="profileImage" alt="profile image" />
         </div>
       </div>
     </section>
 
-    <div>
+    <!-- <div>
       <p>scroll down</p>
-    </div>
+    </div> -->
+
+    <section id="about">
+      <div>
+        <h3 class="section-title text-uppercase">about me</h3>
+      </div>
+    </section>
   </div>
 </template>
 

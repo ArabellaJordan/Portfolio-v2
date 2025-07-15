@@ -9,12 +9,18 @@
   --color-highlight: #fbeaec;
 }
 
+:root {
+  --font-theme: "Sora", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
 * {
-  font-family: "DM Sans", sans-serif;
+  font-family: var(--font-body);
+  color: var(--color-text);
 }
 
 h1 {
-  font-family: "Sora", sans-serif;
+  font-family: var(--font-theme);
   font-size: 8.75rem;
   letter-spacing: -0.5rem;
   font-weight: 600;
@@ -27,15 +33,32 @@ h2 {
   line-height: 0.9;
 }
 
+h3 {
+  font-size: 4rem;
+}
+
 icon {
   width: 2.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+li {
+  list-style-type: none;
 }
 
 .home {
   border: 1px solid red;
   width: 80%;
   margin: 0 auto;
-  max-width: 100rem;
   height: 100vh;
   padding-top: 5rem;
   display: flex;
@@ -43,6 +66,28 @@ icon {
 }
 .home__left {
   margin-top: 3.5rem;
+}
+.home__right {
+  position: relative;
+  width: 35%;
+  min-width: 20.813rem;
+  height: 100%;
+}
+.home__right img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 110%;
+}
+.home__right::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+  mix-blend-mode: color-dodge;
 }
 .home__nav {
   position: absolute;
@@ -55,26 +100,28 @@ icon {
   flex-direction: column;
   gap: 0.65rem;
 }
-.home__item {
-  list-style-type: none;
+.home__item a {
   font-size: 1.25rem;
-}
-.home__image {
+  font-family: var(--font-theme) !important;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
   position: relative;
-  width: 35%;
-  height: inherit;
+  display: inline-block;
 }
-.home__image img {
+.home__item a::before {
+  content: "__";
+  color: var(--color-accent) !important;
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  transition: all 0.3s ease-in;
+  top: -25%;
+  width: 0;
+  overflow: hidden;
 }
-.home__image::after {
-  position: absolute;
-  bottom: 0;
-  content: "eme";
-  width: 100%;
-  height: 50%;
-  background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
-  mix-blend-mode: color-dodge;
+.home__item a:hover, .home__item a:focus, .home__item a:active {
+  color: var(--color-accent) !important;
+  transform: translateX(2rem);
+}
+.home__item a:hover::before {
+  transform: translateX(-2rem);
+  width: 2rem;
 }/*# sourceMappingURL=style.css.map */
