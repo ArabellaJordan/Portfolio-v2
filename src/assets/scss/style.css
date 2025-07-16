@@ -255,4 +255,24 @@ section {
 }
 .header__item:hover, .header__item:focus, .header__item:active {
   color: var(--color-accent);
+}
+
+.footer {
+  background-color: var(--color-text);
+  width: 100vw;
+}
+.footer__container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__container p,
+.footer__container li,
+.footer__container svg,
+.footer__container path {
+  color: var(--color-bg) !important;
 }/*# sourceMappingURL=style.css.map */

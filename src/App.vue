@@ -1,8 +1,3 @@
-<script setup>
-import Landing from "./views/Landing.vue";
-import Header from "./components/Header.vue";
-</script>
-
 <template>
   <!-- <header>
     <img
@@ -21,5 +16,11 @@ import Header from "./components/Header.vue";
   <main>
     <Header />
     <Landing />
+    <Footer />
   </main>
 </template>
+<script setup>
+import Landing from "./views/Landing.vue";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
+</script>
