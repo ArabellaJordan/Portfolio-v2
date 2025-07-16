@@ -17,10 +17,11 @@
         <button class="button__pill button__pill--red">code &lt;/&gt;</button>
         <button class="button__pill button__pill--red text__white">
           view project
-          <!-- <icon
+          <icon
             class="ms-1 text__white"
             :icon="['fas', 'arrow-up-right-from-square']"
-          /> -->
+            size="sm"
+          />
         </button>
       </div>
     </div>

@@ -125,6 +125,9 @@ section {
   flex-direction: column;
   gap: 1rem;
 }
+.card__project--buttons path {
+  color: var(--color-bg);
+}
 
 .home {
   width: 80%;
