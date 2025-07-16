@@ -34,4 +34,8 @@ h3 {
     &__red {
         color: var(--color-accent) !important;
     }
+
+    &__white {
+        color: var(--color-bg) !important;
+    }
 }

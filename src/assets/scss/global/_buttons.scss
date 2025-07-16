@@ -8,11 +8,24 @@
         color: var(--color-bg);
         font-family: 400;
         transition: all 0.3s ease-in;
+        text-align: center;
+        border: none;
+
 
         &:hover,
         &:focus,
         &:active {
             background-color: var(--color-accent);
+        }
+
+        &--red {
+            background-color: var(--color-accent) !important;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: var(--color-accent-hover) !important;
+            }
         }
 
     }

@@ -86,6 +86,12 @@
         <h3 class="section__title section__title--left text-uppercase">
           projects
         </h3>
+
+        <div class="mt-5">
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
       </div>
     </section>
   </div>
@@ -93,4 +99,5 @@
 
 <script setup>
 import profileImage from "@/assets/images/profile.png";
+import ProjectCard from "@/components/ProjectCard.vue";
 </script>

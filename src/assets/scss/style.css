@@ -42,6 +42,9 @@ h3 {
 .text__red {
   color: var(--color-accent) !important;
 }
+.text__white {
+  color: var(--color-bg) !important;
+}
 
 *,
 *::before,
@@ -76,9 +79,51 @@ section {
   color: var(--color-bg);
   font-family: 400;
   transition: all 0.3s ease-in;
+  text-align: center;
+  border: none;
 }
 .button__pill:hover, .button__pill:focus, .button__pill:active {
   background-color: var(--color-accent);
+}
+.button__pill--red {
+  background-color: var(--color-accent) !important;
+}
+.button__pill--red:hover, .button__pill--red:focus, .button__pill--red:active {
+  background-color: var(--color-accent-hover) !important;
+}
+
+.card__project {
+  overflow: hidden;
+  height: 50vh;
+  max-height: 40rem;
+  gap: 5rem;
+  margin: 5rem 0;
+}
+.card__project--left {
+  overflow: hidden;
+  position: relative;
+}
+.card__project--left img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__project--right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  height: 100%;
+  position: relative;
+}
+.card__project--buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .home {
