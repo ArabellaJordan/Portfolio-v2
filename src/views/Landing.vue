@@ -94,10 +94,60 @@
         </div>
       </div>
     </section>
+
+    <section id="contact">
+      <div class="section__container">
+        <h3
+          class="section__title section__title--left text-uppercase text-center"
+        >
+          contact me
+        </h3>
+        <div class="d-flex justify-content-center">
+          <p class="text__dark">
+            <icon :icon="['fas', 'envelope']" />
+            <a
+              class="font__theme ms-2"
+              href="mailto:jordanfaearabella@gmail.com"
+            >
+              jordanfaearabella@gmail.com</a
+            >
+          </p>
+          <p class="mx-5">|</p>
+          <p
+            class="text__dark cursor__pointer"
+            @click="copyText(+639936477699)"
+          >
+            <icon :icon="['fas', 'phone']" />
+            <span class="font__theme ms-2"> +639936477699</span>
+          </p>
+          <p class="mx-5">|</p>
+          <p class="text__dark">
+            <icon :icon="['fas', 'location-dot']" />
+            <span class="font__theme ms-2"> Laguna, Philippines</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div v-if="notif" class="notif__float">
+      <p class="m-0">{{ notif }}</p>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
 import profileImage from "@/assets/images/profile.png";
 import ProjectCard from "@/components/ProjectCard.vue";
+
+let notif = ref("");
+
+function copyText(mobile) {
+  navigator.clipboard.writeText(mobile).then(() => {
+    notif.value = "copied text: +639936477699";
+    setTimeout(() => {
+      notif.value = "";
+    }, 2000);
+  });
+}
 </script>

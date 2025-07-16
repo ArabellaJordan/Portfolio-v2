@@ -38,4 +38,14 @@ h3 {
     &__white {
         color: var(--color-bg) !important;
     }
+
+    &__dark {
+        color: var(--color-text) !important;
+    }
+}
+
+.font {
+    &__theme {
+        font-family: var(--font-theme) !important;
+    }
 }

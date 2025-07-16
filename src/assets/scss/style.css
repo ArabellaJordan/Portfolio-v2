@@ -45,6 +45,13 @@ h3 {
 .text__white {
   color: var(--color-bg) !important;
 }
+.text__dark {
+  color: var(--color-text) !important;
+}
+
+.font__theme {
+  font-family: var(--font-theme) !important;
+}
 
 *,
 *::before,
@@ -63,10 +70,15 @@ li {
 
 a {
   text-decoration: none;
+  color: unset;
 }
 
 section {
   margin-bottom: 18rem;
+}
+
+.cursor__pointer {
+  cursor: pointer !important;
 }
 
 .button {
@@ -231,6 +243,24 @@ section {
   width: 5rem;
   transform: translateX(-6rem);
 }
+.notif__float {
+  opacity: 70%;
+  position: fixed;
+  bottom: 10vh;
+  width: 100%;
+  text-align: center;
+}
+.notif__float p {
+  background-color: var(--color-dividers);
+  padding: 0.5rem 2rem;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+  display: inline;
+  border-radius: 1rem;
+  box-shadow: 1px 3px 5px 2px var(--color-subtext);
+}
+
 .header {
   width: 100vw;
   overflow: hidden;

@@ -19,10 +19,17 @@ li {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 section {
     margin-bottom: 18rem;
     // border: 1px solid red;
     // background-color: lightgray;
+}
+
+.cursor {
+    &__pointer {
+        cursor: pointer !important;
+    }
 }

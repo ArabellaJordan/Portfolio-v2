@@ -133,3 +133,23 @@
 
     &__description {}
 }
+
+.notif {
+    &__float {
+        opacity: 70%;
+        position: fixed;
+        bottom: 10vh;
+        width: 100%;
+        text-align: center;
+
+        p {
+            background-color: var(--color-dividers);
+            padding: 0.5rem 2rem;
+            width: max-content;
+            margin: 0 auto;
+            display: inline;
+            border-radius: 1rem;
+            box-shadow: 1px 3px 5px 2px var(--color-subtext);
+        }
+    }
+}

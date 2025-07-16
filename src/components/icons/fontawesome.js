@@ -8,11 +8,20 @@ import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import {
   faEnvelope,
   faArrowUpRightFromSquare,
+  faPhone,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 /* add icons to the library */
-library.add(faGithub, faEnvelope, faLinkedin, faArrowUpRightFromSquare);
+library.add(
+  faGithub,
+  faEnvelope,
+  faLinkedin,
+  faArrowUpRightFromSquare,
+  faPhone,
+  faLocationDot
+);
 
 // Export the component to register globally
 export default FontAwesomeIcon;
