@@ -8,10 +8,10 @@
             <h2>Web Developer</h2>
           </div>
           <p class="mt-5 mb-0">lorem ipsum dolor sit amet</p>
-          <div class="d-flex gap-4">
-            <icon :icon="['fab', 'github']" size="2xl" />
-            <icon :icon="['fab', 'linkedin']" size="2xl" />
-            <icon icon="envelope" size="2xl" />
+          <div class="d-flex gap-5 mt-3">
+            <icon :icon="['fab', 'github']" size="xl" />
+            <icon :icon="['fab', 'linkedin']" size="xl" />
+            <icon icon="envelope" size="xl" />
           </div>
           <nav class="home__nav">
             <ul class="home__items">

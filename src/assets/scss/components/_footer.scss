@@ -13,10 +13,19 @@
 
 
         p,
-        li,
-        svg,
+        li {
+            color: var(--color-bg) !important;
+        }
+
         path {
             color: var(--color-bg) !important;
+            transition: all 0.3 ease-in;
+
+            &:hover,
+            &:active,
+            &:focus {
+                filter: drop-shadow(1px 3px 5px var(--color-subtext));
+            }
         }
     }
 

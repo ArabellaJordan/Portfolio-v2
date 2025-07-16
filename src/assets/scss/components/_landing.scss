@@ -4,7 +4,7 @@
     margin: 0 auto;
     // max-width: 100rem;
     height: 100vh;
-    padding-top: 5rem;
+    padding-top: 20vh;
 
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,17 @@
 
     &__left {
         margin-top: 3.5rem;
+
+        path {
+            color: var(--color-text) !important;
+            transition: all 0.3 ease-in;
+
+            &:hover,
+            &:active,
+            &:focus {
+                filter: drop-shadow(1px 3px 5px var(--color-subtext));
+            }
+        }
     }
 
     &__right {

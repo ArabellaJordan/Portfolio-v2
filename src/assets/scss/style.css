@@ -145,12 +145,19 @@ section {
   width: 80%;
   margin: 0 auto;
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 20vh;
   display: flex;
   justify-content: space-between;
 }
 .home__left {
   margin-top: 3.5rem;
+}
+.home__left path {
+  color: var(--color-text) !important;
+  transition: all 0.3 ease-in;
+}
+.home__left path:hover, .home__left path:active, .home__left path:focus {
+  filter: drop-shadow(1px 3px 5px var(--color-subtext));
 }
 .home__right {
   position: relative;
@@ -271,6 +278,7 @@ section {
 }
 .header__nav {
   width: 50%;
+  min-width: 31.5rem;
   max-width: 50rem;
   margin: 0 auto;
   padding: 0.5rem 0;
@@ -305,8 +313,13 @@ section {
   gap: 2rem;
 }
 .footer__container p,
-.footer__container li,
-.footer__container svg,
+.footer__container li {
+  color: var(--color-bg) !important;
+}
 .footer__container path {
   color: var(--color-bg) !important;
+  transition: all 0.3 ease-in;
+}
+.footer__container path:hover, .footer__container path:active, .footer__container path:focus {
+  filter: drop-shadow(1px 3px 5px var(--color-subtext));
 }/*# sourceMappingURL=style.css.map */
