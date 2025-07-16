@@ -141,6 +141,7 @@
         bottom: 10vh;
         width: 100%;
         text-align: center;
+        transition: all 0.3 ease-in;
 
         p {
             background-color: var(--color-dividers);

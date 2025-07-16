@@ -249,6 +249,7 @@ section {
   bottom: 10vh;
   width: 100%;
   text-align: center;
+  transition: all 0.3 ease-in;
 }
 .notif__float p {
   background-color: var(--color-dividers);

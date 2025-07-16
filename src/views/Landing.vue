@@ -143,11 +143,22 @@ import ProjectCard from "@/components/ProjectCard.vue";
 let notif = ref("");
 
 function copyText(mobile) {
-  navigator.clipboard.writeText(mobile).then(() => {
-    notif.value = "copied text: +639936477699";
-    setTimeout(() => {
-      notif.value = "";
-    }, 2000);
-  });
+  navigator.clipboard
+    .writeText(mobile)
+    .then(() => {
+      notif.value = "copied text: +639936477699";
+      clearNotifAfterDelay();
+    })
+    .catch((err) => {
+      notif.value = "Failed to copy text";
+      console(err);
+      clearNotifAfterDelay();
+    });
+}
+
+function clearNotifAfterDelay(delay = 2000) {
+  setTimeout(() => {
+    notif.value = "";
+  }, delay);
 }
 </script>
