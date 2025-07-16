@@ -6,10 +6,14 @@
       </p>
       <div class="d-flex gap-5">
         <a href="https://github.com/ArabellaJordan" target="_blank"
-          ><icon :icon="['fab', 'github']" size="2xl"
+          ><icon :icon="['fab', 'github']" size="xl"
         /></a>
-        <icon :icon="['fab', 'linkedin']" size="2xl" />
-        <icon icon="envelope" size="2xl" />
+        <a href="https://www.linkedin.com/in/arabellajordan" target="_blank"
+          ><icon :icon="['fab', 'linkedin']" size="xl"
+        /></a>
+        <a href="mailto:jordanfaearabella@gmail.com" target="_blank"
+          ><icon icon="envelope" size="xl"
+        /></a>
       </div>
       <nav>
         <ul class="d-flex gap-5 p-0 m-0 justify-content-center">
