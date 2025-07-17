@@ -110,6 +110,18 @@ section {
   max-height: 40rem;
   gap: 5rem;
   margin: 5rem 0;
+  transition: all 0.2s ease-in;
+  filter: grayscale(100%);
+}
+.card__project:hover {
+  filter: grayscale(0);
+}
+.card__project:hover .card__project--title {
+  font-weight: 600;
+}
+.card__project:hover img {
+  height: 105%;
+  width: 105%;
 }
 .card__project--left {
   overflow: hidden;
@@ -121,6 +133,9 @@ section {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: all 0.2s ease-in;
 }
 .card__project--right {
   width: 100%;
@@ -139,6 +154,10 @@ section {
 }
 .card__project--buttons path {
   color: var(--color-bg);
+}
+.card__project--title {
+  font-weight: 400;
+  transition: all 0.2s ease-in;
 }
 
 .home {
