@@ -36,9 +36,10 @@
       </div>
     </section>
 
-    <!-- <div>
-      <p>scroll down</p>
-    </div> -->
+    <div class="scroll__down">
+      <p class="m-0 text-uppercase">scroll down</p>
+      <div class="arrow"></div>
+    </div>
 
     <section id="about">
       <div class="section__container">
