@@ -2,6 +2,7 @@
   <div>
     <section id="home">
       <div class="home">
+        <div class="home__blur"></div>
         <div class="home__left">
           <div class="">
             <h1 class="text-uppercase">Arabella</h1>

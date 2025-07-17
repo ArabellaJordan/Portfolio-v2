@@ -9,6 +9,21 @@
     display: flex;
     justify-content: space-between;
 
+    * {
+        z-index: 2;
+    }
+
+    &__blur {
+        background-color: var(--color-accent);
+        width: 100vh;
+        height: 100vh;
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1 !important;
+        filter: blur(3rem) saturate(120%);
+        top: -5rem;
+        right: -20rem;
+    }
 
     &__left {
         margin-top: 3.5rem;
@@ -50,6 +65,7 @@
             height: 50%;
             background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
             mix-blend-mode: color-dodge;
+            z-index: 2;
         }
     }
 
@@ -177,6 +193,7 @@
         line-height: 0.75rem;
         top: 85vh;
         display: flex;
+        z-index: 5;
 
         .arrow {
             margin: 0.25rem 0 0 1rem;

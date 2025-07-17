@@ -177,6 +177,20 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.home * {
+  z-index: 2;
+}
+.home__blur {
+  background-color: var(--color-accent);
+  width: 100vh;
+  height: 100vh;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1 !important;
+  filter: blur(3rem) saturate(120%);
+  top: -5rem;
+  right: -20rem;
+}
 .home__left {
   margin-top: 3.5rem;
 }
@@ -208,6 +222,7 @@ section {
   height: 50%;
   background: linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
   mix-blend-mode: color-dodge;
+  z-index: 2;
 }
 .home__nav {
   position: absolute;
@@ -307,6 +322,7 @@ section {
   line-height: 0.75rem;
   top: 85vh;
   display: flex;
+  z-index: 5;
 }
 .scroll__down .arrow {
   margin: 0.25rem 0 0 1rem;
@@ -341,7 +357,6 @@ section {
   overflow: hidden;
   position: fixed;
   z-index: 99;
-  background-color: var(--color-bg);
 }
 .header__nav {
   width: 50%;
