@@ -103,6 +103,15 @@ section {
 .button__pill--red:hover, .button__pill--red:focus, .button__pill--red:active {
   background-color: var(--color-accent-hover) !important;
 }
+.button__round {
+  height: 7.5rem;
+  width: 7.5rem;
+  background-color: var(--color-accent);
+  align-content: center;
+  text-align: center;
+  color: var(--color-bg);
+  border-radius: 50%;
+}
 
 .card__project {
   overflow: hidden;
@@ -310,6 +319,21 @@ section {
   position: absolute;
   right: -0.5rem;
   top: -0.4rem;
+}
+.scroll__up {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  height: 4rem;
+  width: 4rem;
+  transition: all 0.3s ease-in;
+}
+.scroll__up path {
+  color: var(--color-bg);
+}
+.scroll__up:hover {
+  background-color: var(--color-accent-hover);
+  box-shadow: 1px 3px 5px var(--color-subtext);
 }
 
 .header {

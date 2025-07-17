@@ -29,4 +29,14 @@
         }
 
     }
+
+    &__round {
+        height: 7.5rem;
+        width: 7.5rem;
+        background-color: var(--color-accent);
+        align-content: center;
+        text-align: center;
+        color: var(--color-bg);
+        border-radius: 50%;
+    }
 }
