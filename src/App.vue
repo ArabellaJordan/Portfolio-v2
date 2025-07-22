@@ -13,14 +13,23 @@
     </div>
   </header> -->
 
+  <Header @section="moveTo" />
+
   <main>
-    <Header />
-    <Landing />
-    <Footer />
+    <Landing :section="pageSection" />
   </main>
+
+  <Footer />
 </template>
 <script setup>
+import { ref } from "vue";
 import Landing from "./views/Landing.vue";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
+
+const pageSection = ref("");
+
+function moveTo(section) {
+  pageSection.value = section;
+}
 </script>

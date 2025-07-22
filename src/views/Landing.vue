@@ -140,11 +140,23 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, watch } from "vue";
 import profileImage from "@/assets/images/profile.png";
 import ProjectCard from "@/components/ProjectCard.vue";
 
+const props = defineProps(["section"]);
 let notif = ref("");
+
+/**
+ * Scrolls smoothly to a section on the page.
+ * @param {string} id - The HTML ID of the section to scroll to.
+ */
+function moveTo(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth" }); // scrolls smoothly
+  }
+}
 
 function copyText(mobile) {
   navigator.clipboard
@@ -165,4 +177,12 @@ function clearNotifAfterDelay(delay = 2000) {
     notif.value = "";
   }, delay);
 }
+
+// watch for changes
+watch(
+  () => props.section,
+  (newValue, oldValue) => {
+    moveTo(newValue);
+  }
+);
 </script>

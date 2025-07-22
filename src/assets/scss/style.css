@@ -88,7 +88,7 @@ a {
 }
 
 section {
-  margin-bottom: 18rem;
+  margin: 1rem auto 10rem auto;
 }
 
 .cursor__pointer {
@@ -183,6 +183,11 @@ section {
   transition: all 0.2s ease-in;
 }
 
+#home {
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
 .home {
   width: 80%;
   margin: 0 auto;
@@ -267,6 +272,7 @@ section {
 .section__container {
   width: 80%;
   margin: 0 auto;
+  padding-top: 7rem;
 }
 .section__title {
   position: relative;
