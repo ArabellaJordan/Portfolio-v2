@@ -63,6 +63,20 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+  width: 0.4rem;
+  /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: var(--color-text);
+  /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-bg);
+  /* color of the scroll thumb */
+  border-radius: 1rem;
+  /* roundness of the scroll thumb */
+}
 
 li {
   list-style-type: none;
