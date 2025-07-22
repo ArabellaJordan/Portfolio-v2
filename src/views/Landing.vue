@@ -42,7 +42,7 @@
       <div class="arrow"></div>
     </div>
 
-    <div class="scroll__up button__round"><icon icon="arrow-up" /></div>
+    <!-- <div class="scroll__up button__round"><icon icon="arrow-up" /></div> -->
 
     <section id="about">
       <div class="section__container">

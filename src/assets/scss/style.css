@@ -186,7 +186,7 @@ section {
   height: 100vh;
   border-radius: 50%;
   position: absolute;
-  z-index: 1 !important;
+  z-index: 2 !important;
   filter: blur(3rem) saturate(120%);
   top: -5rem;
   right: -20rem;
