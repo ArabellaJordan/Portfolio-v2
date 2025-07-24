@@ -17,13 +17,13 @@
           <nav class="home__nav">
             <ul class="home__items">
               <li class="home__item">
-                <a>about me</a>
+                <a href="#about">about me</a>
               </li>
               <li class="home__item">
-                <a>projects</a>
+                <a href="#projects">projects</a>
               </li>
               <li class="home__item">
-                <a>contact</a>
+                <a href="#contact">contact</a>
               </li>
               <li class="home__item">
                 <a class="text__red">get resume</a>
