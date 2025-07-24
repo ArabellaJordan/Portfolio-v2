@@ -15,7 +15,8 @@ import vueDevTools from "vite-plugin-vue-devtools";
 // });
 
 export default defineConfig(({ mode }) => ({
-  plugins: [vue(), mode === "development" && vueDevTools()].filter(Boolean),
+  // plugins: [vue(), mode === "development" && vueDevTools()].filter(Boolean),
+  plugins: [vue()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

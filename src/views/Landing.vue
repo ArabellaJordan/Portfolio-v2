@@ -92,9 +92,15 @@
         </h3>
 
         <div class="mt-5">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          <div v-for="project in projects">
+            <ProjectCard
+              :image="project.image"
+              :title="project.title"
+              :description="project.description"
+              :code-link="project.codeLink"
+              :project-link="project.projectLink"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -146,6 +152,32 @@ import ProjectCard from "@/components/ProjectCard.vue";
 
 const props = defineProps(["section"]);
 let notif = ref("");
+const projects = [
+  {
+    image: "../assets/images/portfolio.png",
+    title: "Website Portfolio",
+    description:
+      "Portfolio website built using Vue.js, SCSS, and Vite to showcase my skills and some personal projects.",
+    codeLink: "https://github.com/ArabellaJordan/Portfolio-v2",
+    // projectLink: "https://arabellajordan.netlify.app/",
+  },
+  {
+    image: "../assets/images/clinic.png",
+    title: "Appointment Scheduling and Patient Record System",
+    description:
+      "A web application developed for a dental clinic using the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire).",
+    // codeLink: "https://github.com/ArabellaJordan/Dental-Clinic",
+    // projectLink: "https://dental-clinic-main-lkgzmx.laravel.cloud/",
+  },
+  {
+    image: "../assets/images/piano.png",
+    title: "Mini Piano",
+    description:
+      "A mini piano built with Vanilla JavaScript. Can be played with both mouse and keyboard.",
+    codeLink: "https://github.com/ArabellaJordan/Piano-Project",
+    projectLink: "https://arabellajordan.github.io/Piano-Project/",
+  },
+];
 
 /**
  * Scrolls smoothly to a section on the page.
