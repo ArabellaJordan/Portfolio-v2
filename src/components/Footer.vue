@@ -17,9 +17,9 @@
       </div>
       <nav>
         <ul class="d-flex gap-5 p-0 m-0 justify-content-center">
-          <li class="text-uppercase">home</li>
-          <li class="text-uppercase">about</li>
-          <li class="text-uppercase">projects</li>
+          <li class="text-uppercase" @click="moveTo('home')">home</li>
+          <li class="text-uppercase" @click="moveTo('about')">about</li>
+          <li class="text-uppercase" @click="moveTo('projects')">projects</li>
         </ul>
       </nav>
     </div>
@@ -27,4 +27,9 @@
 </template>
 <script setup>
 const year = new Date().getFullYear();
+const emit = defineEmits(["section"]);
+
+function moveTo(section) {
+  emit("section", section);
+}
 </script>

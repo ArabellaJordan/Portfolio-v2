@@ -19,7 +19,7 @@
     <Landing :section="pageSection" />
   </main>
 
-  <Footer />
+  <Footer @section="moveTo" />
 </template>
 <script setup>
 import { ref } from "vue";
