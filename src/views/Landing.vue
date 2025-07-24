@@ -8,7 +8,12 @@
             <h1 class="text-uppercase">Arabella</h1>
             <h2>Web Developer</h2>
           </div>
-          <p class="mt-5 mb-0">lorem ipsum dolor sit amet</p>
+          <p class="mt-5 mb-0">
+            Focused on progress, passionate about development,<br />
+            and ready to bring value to every project.
+          </p>
+          <!-- <p class="mt-5 mb-0">Empowering Ideas Through Code.</p>
+          <p class="mt-5 mb-0">Eager to Learn. Passionate to Build.</p> -->
           <div class="d-flex gap-5 mt-3">
             <icon :icon="['fab', 'github']" size="xl" />
             <icon :icon="['fab', 'linkedin']" size="xl" />
@@ -54,9 +59,16 @@
         </h3>
 
         <p class="section__description text-end my-5">
-          lorem ipsum dolor sit amet. lorem ipsum dolor sit amet. lorem ipsum
-          dolor sit amet. lorem ipsum dolor sit amet. lorem ipsum dolor sit
-          amet. lorem ipsum dolor sit amet. lorem ipsum dolor sit amet.
+          I am a web developer with a background in Computer Science and
+          real-world experience in both front-end and back-end development. I’ve
+          worked on transforming wireframes and mockups into fully functional
+          websites, applying responsive design principles and clean code
+          practices. <br />
+          <br />My experience includes full-stack development, database
+          management,and version control, gained through professional work,
+          internship, and self-study. I’m driven by a passion for continuous
+          learning and growth, always striving to improve my skills and follow
+          best practices in every project I take on.
         </p>
 
         <h4 class="text-center text-uppercase fs-2">technical skills</h4>
@@ -93,6 +105,12 @@
         <h3 class="section__title section__title--left text-uppercase">
           projects
         </h3>
+        <p class="section__description my-5">
+          Here are a few projects I’ve built to sharpen my skills and deliver
+          value. While I’ve had the opportunity to work on additional impactful
+          applications, some are not publicly available due to the private
+          nature of clients and in-house systems.
+        </p>
 
         <div class="mt-5">
           <div v-for="project in projects">
@@ -168,7 +186,7 @@ const projects = [
     image: "../assets/images/clinic.png",
     title: "Appointment Scheduling and Patient Record System",
     description:
-      "A web application developed for a dental clinic using the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire).",
+      "A capstone web application developed for a dental clinic using the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire). Built to manage appointment scheduling and patient records efficiently.",
     // codeLink: "https://github.com/ArabellaJordan/Dental-Clinic",
     // projectLink: "https://dental-clinic-main-lkgzmx.laravel.cloud/",
   },
