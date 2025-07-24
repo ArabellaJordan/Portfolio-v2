@@ -25,7 +25,10 @@
               <li class="home__item">
                 <a href="#contact">contact</a>
               </li>
-              <li class="home__item">
+              <li
+                class="home__item"
+                @click="openDocument('../assets/docs/jordan-resume.pdf')"
+              >
                 <a class="text__red">get resume</a>
               </li>
             </ul>
@@ -208,6 +211,15 @@ function clearNotifAfterDelay(delay = 2000) {
   setTimeout(() => {
     notif.value = "";
   }, delay);
+}
+
+/**
+ * Opens the document on a new tab
+ * @param {string} path - The relative path of the target document.
+ */
+function openDocument(path) {
+  const url = new URL(path, import.meta.url).href;
+  window.open(url, "_blank").focus;
 }
 
 // watch for changes
