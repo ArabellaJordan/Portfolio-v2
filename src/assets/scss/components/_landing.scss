@@ -1,6 +1,9 @@
+@use '../util'as *;
+
 #home {
     margin: 0 auto;
     margin-bottom: 7rem;
+    position: relative;
 }
 
 .home {
@@ -14,24 +17,30 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint-down(small) {
+        flex-direction: column;
+    }
+
     * {
         z-index: 2;
     }
 
-    &__blur {
-        background-color: var(--color-accent);
-        width: 100vh;
-        height: 100vh;
-        border-radius: 50%;
-        position: absolute;
-        z-index: 2 !important;
-        filter: blur(3rem) saturate(120%);
-        top: -5rem;
-        right: -20rem;
-    }
+    // &__blur {
+    //     background-color: var(--color-accent);
+    //     width: 100vh;
+    //     height: 100vh;
+    //     border-radius: 50%;
+    //     position: absolute;
+    //     z-index: 2 !important;
+    //     filter: blur(3rem) saturate(120%);
+    //     top: -5rem;
+    //     right: -20rem;
+    // }
 
     &__left {
         margin-top: 3.5rem;
+
+
 
         path {
             color: var(--color-text) !important;
@@ -152,14 +161,24 @@
         &--left {
             transform: translateX(6rem);
 
+            @include breakpoint-down(small) {
+                transform: translateX(1rem);
+            }
+
             &::before {
                 content: "";
                 position: absolute;
                 bottom: 50%;
                 padding-left: 1rem;
                 border-bottom: 0.4rem solid var(--color-text);
-                width: 5rem;
+                // width: 5rem;
+                width: clamp(1rem, 1rem + 3vw, 5rem);
                 transform: translateX(-6rem);
+
+                @include breakpoint-down(small) {
+                    transform: translateX(-2rem);
+                    border-bottom: 0.3rem solid var(--color-text);
+                }
             }
         }
     }

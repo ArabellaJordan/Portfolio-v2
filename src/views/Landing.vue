@@ -1,8 +1,8 @@
 <template>
   <div>
     <section id="home">
+      <div class="home__blur"></div>
       <div class="home">
-        <div class="home__blur"></div>
         <div class="home__left">
           <div class="">
             <h1 class="text-uppercase">Arabella</h1>
@@ -133,7 +133,9 @@
         >
           contact me
         </h3>
-        <div class="d-flex justify-content-center">
+        <div
+          class="d-flex flex-column flex-md-row align-items-center justify-content-center"
+        >
           <p class="text__dark">
             <icon :icon="['fas', 'envelope']" />
             <a
@@ -143,7 +145,7 @@
               jordanfaearabella@gmail.com</a
             >
           </p>
-          <p class="mx-5">|</p>
+          <p class="mx-5 d-none d-md-inline">|</p>
           <p
             class="text__dark cursor__pointer"
             @click="copyText(+639936477699)"
@@ -151,7 +153,7 @@
             <icon :icon="['fas', 'phone']" />
             <span class="font__theme ms-2"> +639936477699</span>
           </p>
-          <p class="mx-5">|</p>
+          <p class="mx-5 d-none d-md-inline">|</p>
           <p class="text__dark">
             <icon :icon="['fas', 'location-dot']" />
             <span class="font__theme ms-2"> Laguna, Philippines</span>
