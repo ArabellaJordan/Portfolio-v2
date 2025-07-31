@@ -134,6 +134,12 @@ section {
   text-align: center;
   border: none;
 }
+@media (max-width: 56.24875em) {
+  .button__pill {
+    padding: 0.05rem 2rem;
+    font-size: 0.75rem;
+  }
+}
 .button__pill:hover, .button__pill:focus, .button__pill:active {
   background-color: var(--color-accent);
 }
@@ -246,6 +252,7 @@ section {
   position: relative;
   width: auto;
   min-width: 20.813rem;
+  overflow: visible;
 }
 @media (max-width: 89.99875em) {
   .home__right {
@@ -270,6 +277,7 @@ section {
     width: 50%;
     right: 20%;
     bottom: 50%;
+    min-width: 10rem;
   }
 }
 @media (max-width: 56.24875em) {

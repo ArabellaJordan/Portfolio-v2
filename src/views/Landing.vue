@@ -76,7 +76,7 @@
         <h4 class="text-center text-uppercase fs-2">technical skills</h4>
 
         <div
-          class="d-flex justify-content-center row-gap-4 column-gap-5 flex-wrap px-3 mt-5"
+          class="d-flex justify-content-center row-gap-4 column-gap-2 column-gap-md-5 flex-wrap px-3 mt-5"
         >
           <div class="button__pill fs-5">HTML</div>
           <div class="button__pill fs-5">CSS</div>
