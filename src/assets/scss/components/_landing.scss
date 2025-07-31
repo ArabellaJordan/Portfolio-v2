@@ -178,14 +178,25 @@
             text-align: right;
             transform: translateX(-6rem);
 
+            @include breakpoint-down(small) {
+                transform: translateX(-4rem);
+            }
+
             &::after {
                 content: "";
                 position: absolute;
                 bottom: 50%;
                 padding-left: 1rem;
-                border-bottom: 0.4rem solid var(--color-text);
                 width: 5rem;
                 margin-left: 1rem;
+                width: clamp(1rem, 1rem + 3vw, 5rem);
+                transform: translateX(1rem);
+                border-bottom: 0.4rem solid var(--color-text);
+
+                @include breakpoint-down(small) {
+                    transform: translateX(0);
+                    border-bottom: 0.3rem solid var(--color-text);
+                }
             }
         }
 
@@ -208,7 +219,7 @@
                 transform: translateX(-6rem);
 
                 @include breakpoint-down(small) {
-                    transform: translateX(-2rem);
+                    transform: translateX(-130%);
                     border-bottom: 0.3rem solid var(--color-text);
                 }
             }
