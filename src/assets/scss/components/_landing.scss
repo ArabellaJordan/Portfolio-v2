@@ -20,6 +20,10 @@
         width: 90%;
     }
 
+    @include breakpoint-down(small) {
+        padding-top: 5vh;
+    }
+
 
     * {
         z-index: 2;
