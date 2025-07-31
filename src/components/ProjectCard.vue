@@ -5,7 +5,9 @@
     </div>
 
     <div class="col card__project--right">
-      <h3 class="section__title card__project--title text-end">{{ title }}</h3>
+      <h3 class="section__title card__project--title text-end">
+        {{ title }}
+      </h3>
       <div v-if="description" class="card__project--description text-end">
         {{ description }}
       </div>
@@ -40,6 +42,14 @@ const props = defineProps([
   "codeLink",
   "projectLink",
 ]);
+
+// const formattedTitle = computed(() => {
+//   if (props.title.length > 50) {
+//     return props.title.slice(0, 20);
+//   } else {
+//     return props.title;
+//   }
+// });
 
 const resolvedImage = computed(
   () => new URL(props.image, import.meta.url).href

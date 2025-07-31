@@ -60,7 +60,7 @@
           about me
         </h3>
 
-        <p class="section__description text-end my-5">
+        <p class="section__description text-center text-md-end my-5">
           I am a web developer with a background in Computer Science and
           real-world experience in both front-end and back-end development. I’ve
           worked on transforming wireframes and mockups into fully functional
@@ -136,7 +136,7 @@
           contact me
         </h3>
         <div
-          class="d-flex flex-column flex-md-row align-items-center justify-content-center"
+          class="d-flex flex-column flex-md-row flex-wrap align-items-center justify-content-center"
         >
           <p class="text__dark">
             <icon :icon="['fas', 'envelope']" />
