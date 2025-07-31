@@ -43,17 +43,7 @@ const props = defineProps([
   "projectLink",
 ]);
 
-// const resolvedImage = computed(
-//   () => new URL(props.image, import.meta.url).href
-// );
-
-const images = import.meta.glob("@/assets/images/*", { eager: true });
-
-const resolvedImage = computed(() => {
-  const match = Object.entries(images).find(([path]) =>
-    path.includes(props.image)
-  );
-
-  return match ? match[1].default : "";
-});
+const resolvedImage = computed(
+  () => new URL(props.image, import.meta.url).href
+);
 </script>
