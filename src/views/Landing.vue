@@ -14,7 +14,9 @@
           </p>
           <!-- <p class="mt-5 mb-0">Empowering Ideas Through Code.</p>
           <p class="mt-5 mb-0">Eager to Learn. Passionate to Build.</p> -->
-          <div class="d-flex gap-5 mt-3">
+          <div
+            class="d-flex justify-content-center justify-content-md-start gap-5 mt-3"
+          >
             <icon :icon="['fab', 'github']" size="xl" />
             <icon :icon="['fab', 'linkedin']" size="xl" />
             <icon icon="envelope" size="xl" />
