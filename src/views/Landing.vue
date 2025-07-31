@@ -17,9 +17,15 @@
           <div
             class="d-flex justify-content-center justify-content-md-start gap-5 mt-3"
           >
-            <icon :icon="['fab', 'github']" size="xl" />
-            <icon :icon="['fab', 'linkedin']" size="xl" />
-            <icon icon="envelope" size="xl" />
+            <a href="https://github.com/ArabellaJordan" target="_blank"
+              ><icon :icon="['fab', 'github']" size="xl"
+            /></a>
+            <a href="https://www.linkedin.com/in/arabellajordan" target="_blank"
+              ><icon :icon="['fab', 'linkedin']" size="xl"
+            /></a>
+            <a href="mailto:jordanfaearabella@gmail.com" target="_blank"
+              ><icon icon="envelope" size="xl"
+            /></a>
           </div>
           <nav class="home__nav">
             <ul class="home__items">
