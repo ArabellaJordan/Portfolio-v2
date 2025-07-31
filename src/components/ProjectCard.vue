@@ -43,14 +43,6 @@ const props = defineProps([
   "projectLink",
 ]);
 
-// const formattedTitle = computed(() => {
-//   if (props.title.length > 50) {
-//     return props.title.slice(0, 20);
-//   } else {
-//     return props.title;
-//   }
-// });
-
 const resolvedImage = computed(
   () => new URL(props.image, import.meta.url).href
 );
