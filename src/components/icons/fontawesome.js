@@ -11,6 +11,7 @@ import {
   faPhone,
   faLocationDot,
   faArrowUp,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,7 +23,8 @@ library.add(
   faArrowUpRightFromSquare,
   faPhone,
   faLocationDot,
-  faArrowUp
+  faArrowUp,
+  faBars
 );
 
 // Export the component to register globally

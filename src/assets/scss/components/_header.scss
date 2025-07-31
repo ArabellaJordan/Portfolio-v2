@@ -1,3 +1,5 @@
+@use "../util/"as *;
+
 .header {
     width: 100vw;
     overflow: hidden;
@@ -5,12 +7,45 @@
     z-index: 99;
     // background-color: var(--color-bg);
 
+    @include breakpoint-down(small) {
+        right: 0;
+        width: max-content;
+    }
+
+
+
     &__nav {
         width: 50%;
         min-width: 31.5rem;
         max-width: 50rem;
         margin: 0 auto;
         padding: 0.5rem 0;
+
+        @include breakpoint-down(small) {
+            display: none;
+        }
+    }
+
+    &__menu {
+        display: none;
+        padding: 1rem;
+        left: 0;
+        top: 0;
+        background-color: white;
+
+        @include breakpoint-down(small) {
+            // display: block;
+        }
+    }
+
+    &__mobile {
+        position: fixed;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        background-color: white;
+        border: 1px solid red;
+        display: none;
     }
 
     &__items {

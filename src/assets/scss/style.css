@@ -493,12 +493,40 @@ section {
   position: fixed;
   z-index: 99;
 }
+@media (max-width: 43.7485em) {
+  .header {
+    right: 0;
+    width: -moz-max-content;
+    width: max-content;
+  }
+}
 .header__nav {
   width: 50%;
   min-width: 31.5rem;
   max-width: 50rem;
   margin: 0 auto;
   padding: 0.5rem 0;
+}
+@media (max-width: 43.7485em) {
+  .header__nav {
+    display: none;
+  }
+}
+.header__menu {
+  display: none;
+  padding: 1rem;
+  left: 0;
+  top: 0;
+  background-color: white;
+}
+.header__mobile {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  background-color: white;
+  border: 1px solid red;
+  display: none;
 }
 .header__items {
   text-align: center;
