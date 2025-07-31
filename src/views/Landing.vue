@@ -185,7 +185,7 @@ const props = defineProps(["section"]);
 let notif = ref("");
 const projects = [
   {
-    image: "../assets/images/portfolio.png",
+    image: "@/assets/images/portfolio.png",
     title: "Website Portfolio",
     description:
       "Portfolio website built using Vue.js, SCSS, and Vite to showcase my skills and some personal projects.",
@@ -193,7 +193,7 @@ const projects = [
     // projectLink: "https://arabellajordan.netlify.app/",
   },
   {
-    image: "../assets/images/clinic.png",
+    image: "@/assets/images/clinic.png",
     title: "Appointment Scheduling and Patient Record System",
     description:
       "A capstone web application developed for a dental clinic using the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire). Built to manage appointment scheduling and patient records efficiently.",
@@ -201,7 +201,7 @@ const projects = [
     // projectLink: "https://dental-clinic-main-lkgzmx.laravel.cloud/",
   },
   {
-    image: "../assets/images/piano.png",
+    image: "@/assets/images/piano.png",
     title: "Mini Piano",
     description:
       "A mini piano built with Vanilla JavaScript. Can be played with both mouse and keyboard.",
